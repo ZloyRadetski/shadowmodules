@@ -4,10 +4,8 @@ if ($response.body) {
 
     // Внедряем флаги подписки
     if (body.user) {
-      body.user.is_pro = true;
-      body.user.pro = true;
-      body.user.has_pro = true;
-      body.user.status = "pro";
+      body.user.can_buy_in_beta = true;
+      body.global.pro_support_url = ""
     }
     if (body.global) {
       body.global.can_edit_settings = true;
